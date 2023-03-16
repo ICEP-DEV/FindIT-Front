@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button (click)="opened=!opened"><mat-icon><menu></menu></mat-icon>
+            Find iT</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side">
+
+        <mat-list>
+            <mat-list><a routerlink="/home">Home</a></mat-list>
+            <mat-list><a routerlink="/home">Home</a></mat-list>
+            <mat-list><a routerlink="/home">Home</a></mat-list>
+        </mat-list>
+        <button>
+        <a routerLink ="/home">Home</a>
+    </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</m at-sidenav-container>
+</mat-sidenav-container>
