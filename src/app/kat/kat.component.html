@@ -1,0 +1,34 @@
+<p>kat works!</p>
+<div class="scroll-ele">
+</div>
+
+<div class="home_body_contentMiddle_center">
+    <mat-card class="post-message">
+        <mat-card-header class="post-messae-header"
+                         style="...">
+            <img
+               alt="{{user?.firstName}}" 
+               mat-card-avatar
+               [src]="user?.avatar">
+               <form #form="ngForm" (ngSubmit)="postMessage(form)">
+                <input class="on-your-mind" name="message" ngModel placeholder="What's on your mind?" type="text">
+                <button style="..." type="submit"></button>
+               </form>  
+        </mat-card-header>
+    <mat-card-content class="card-body">
+        <div>
+            <mat-icon color="accent">videocam</mat-icon>
+            <span>Live video</span>
+        </div>
+        
+        <div>
+            <mat-icon color="primary">photo_album</mat-icon>
+            <span>Phot/Video</span>
+        </div>
+
+        
+    </mat-card-content>
+    </mat-card>
+
+    <mat-card *ngFor="let p of posts" class="posts">
+</div>
